@@ -137,7 +137,7 @@
                 <!-- blog-item start -->
                 <div class="col-md-4 col-sm-6 col-xs-12 mb-40">
                     <div class="blog-item">
-                        <a class="image" href="blog-details.html"><img src="<?php echo $lastNews->image_url; ?>" alt=""></a>
+                        <a class="image" href="<?php echo base_url().'news/detail/1';?>"><img src="<?php echo $lastNews->image_url; ?>" alt=""></a>
                         <div class="blog-dsc">
                             <span class="date"><?php echo date_format($lastNews->reg_date(), "d/m/Y"); ?></span>
                             <h4 class="title"><a href="#"><?php echo $lastNews->title; ?></a></h4>

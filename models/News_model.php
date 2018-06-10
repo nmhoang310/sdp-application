@@ -18,4 +18,10 @@ class News_model extends CI_Model
     public function get_current_page_records($limit, $start) {
         
     }
+    
+    public function  get_by_id($news_id) {
+        $sql = "select * from news where news_id = ?";
+        $query = $this->db->query($sql, $news_id);
+        return $query->result();
+    }
 }
